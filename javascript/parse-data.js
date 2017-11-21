@@ -11,7 +11,7 @@
     (Note the ES6 'template literal' syntax):
   */ 
     
-  for (let i = 0; i < obj.lecturers.length; i++) {
+  for (let i in obj.lecturers) {
     let name = `${obj.lecturers[i].firstName} ${obj.lecturers[i].lastName} ${obj.lecturers[i].roomNumber}`;
     let li = document.createElement("li");
     li.appendChild(document.createTextNode(name));
